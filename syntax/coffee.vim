@@ -10,6 +10,9 @@ endif
 
 " Include JavaScript for coffeeEmbed.
 syn include @coffeeJS syntax/javascript.vim
+if exists('b:current_syntax')
+  unlet b:current_syntax
+endif
 
 " Highlight long strings.
 syn sync minlines=100
